@@ -1,119 +1,80 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="description" content="Denver Sidewalks">
-<meta name="keywords" content="sidewalk, path, pedestrian">
-<meta name="web designer" content="Eric Erickson">
-<title>Index</title>
-<link href="css/sidewalkstyle.css" rel="stylesheet">
-<script type="text/javascript" src="js/main.js"></script>
-
-</head>
-
-<body>
-<h1 class="contact">Denver Sidewalks</h1>
-
-<div class="buttons">
-	<a class="contact" href="index.html">Home Page</a>
-	<a class="blog" href="blog.html">Blog</a>
-	<a class= "resume" href="resume.html">Resume</a>
-</div>
-
-<figure>
-<img src = "images/contactpic.jpg" class="contact" alt="Denver sidewalk fountian">
-<figcaption>Denver sidewalk fountian
-</figcaption>
-</figure>
-
-<p>The sidewalk is our greatest public domain. It is open to all people at all hours and in all sorts of weather.</p>
-<p>It is therefore the responsibility of each person to maintain this space for every other person.</p>
-
-<p><a class= "email" href="mailto:eric.magnus11@gmail.com?Subject=Website%20Inquiry:" target="_top">
-Email Questions or Comments</a></p>
-
-<!--Form information below-->
-    <section>
-        <h1>Please join our email list</h1>
-          <form id="email_form" name="email_form" action="join.html" method="get">
-	        <label for="email_address1">Email Address:</label>
-	        <input type="text" id="email_address1" name="email_address1">
-	        <span id="email_address1_error">*</span><br>
-	        
-	        <label for="email_address2">Re-enter Email Address:</label>
-	        <input type="text" id="email_address2" name="email_address2">
-	        <span id="email_address2_error">*</span><br>
-	        
-	        <label for="first_name">First Name</label>
-	        <input type="text" id="first_name" name="first_name">
-	        <span id="first_name_error">*</span><br>
-	        
-	        <label for "checkbox" class="label">Check box to get emails</label>
-						<input type="checkbox" id="latincheck" name="latincheck">
-			<br>			
-			<label for="interest" class="label">Which issue are you interested in?</label>
-				<select name="interest" id="interest">
-					<option value="null">Select One</option>
-					<option value="1">Walking around</option>
-					<option value="2">Sidewalk Maintence</option>
-					<option value="3">Zoning</option>
-					<option value="4">Building Code</option>
-				</select>
-	        <br>
-	        <label for="comments"  class="label">Questions or Comments </label>
-	        <br>
-				<textarea name="comments" cols="40" rows="5" id="comments"></textarea>
-	        
-	        <label>&nbsp;</label>
-	        <input type="button" id="join_list" value="Join our List">
-	    </form>
-	</section>	
-    
-<!--<form class="requestform" method="post"> <!--action="form/request.html"-->
-<!--	<p>
-		<label for="firstname" class="label">First Name</label>
-		<input type="text" name="firstname" id="firstname">
-	</p>	
-	<p>
-		<label for="lastname" class="label">Last Name</label>
-		<input type="text" name="lastname" id="lastname">
-	</p>
-	<p>					<label for "checkbox" class="label">Check box to get emails</label>
-						<input type="checkbox" id="latincheck" name="latincheck">
-</p>	
-	<p>
-		<label>What is your email address?</label>
-		<input type="text" id="emailaddress" name="emailaddress">
-		<span id="emailaddress_error">*</span>
-
-
-		<!--<label for="emailaddress" class="label">What is your email address?</label>
-		<input type="text" name="emailaddress" id="emailaddress">
-		<span style="color: green" id="emailaddress_error">*</span>
-
-	</p>
-	<p>
-		<label for="interest" class="label">Which issue are you interested in?</label>
-		<select name="interest" id="interest">
-			<option value="null">Select One</option>
-			<option value="1">Walking around</option>
-			<option value="2">Sidewalk Maintence</option>
-			<option value="3">Zoning</option>
-			<option value="4">Building Code</option>
-		</select>
-	</p>
-		
-	<p>
-		<label for="comments"  class="label">Questions or Comments </label>
-		<textarea name="comments" cols="40" rows="5" id="comments"></textarea>
-	</p>
-		
-	
-		<input type="button" id="join_list" value="Request">
-		
-</form>
+<!-- Russell "Eric" Erickson
+	ICT 4510 Advanced Website Design
+	Assignment 2 - CSS Assignment 
 -->
 
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Denver Sidewalks">
+		<meta name="keywords" content="sidewalk, path, pedestrian">
+		<meta name="web designer" content="Eric Erickson">
+		<title>Index</title>
+		<link href="css/sidewalkstyle.css" rel="stylesheet">
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body>
 
-</body>
+		<h1 class="contact">Denver Sidewalks</h1>
+		
+		<ul class="buttons">
+			<li><a class="contact" href="index.html">Home Page</a></li>
+			<li><a class="blog" href="blog.html">Blog</a></li>
+			<li><a class= "resume" href="resume.html">Resume</a></li>
+		</ul>
+		
+		<figure>
+			<img src = "images/contactpic.jpg" class="contact" alt="Denver sidewalk fountian">
+			<figcaption>Denver sidewalk fountian
+		</figcaption>
+		</figure>
+		
+		<p>The sidewalk is our greatest public domain. It is open to all people at all hours and in all sorts of weather.</p>
+		<p>It is therefore the responsibility of each person to maintain this space for every other person.</p>
+		
+		<p><a class= "email" href="mailto:eric.magnus11@gmail.com?Subject=Website%20Inquiry:" target="_top">
+		Email Questions or Comments</a></p>
+		
+		<!--Form information below-->
+		<section>
+			<h1 class="contact">Please join our email list</h1>
+		    	<form class="signup" id="email_form" name="email_form" action="join.html" method="get">
+			        <label for="email_address1">Email Address:</label>
+			        <input type="text" id="email_address1" name="email_address1">
+			        <span id="email_address1_error">*</span><br>
+			        
+			        <label for="email_address2">Re-enter Email Address:</label>
+			        <input type="text" id="email_address2" name="email_address2">
+			        <span id="email_address2_error">*</span><br>
+			        
+			        <label for="first_name">First Name</label>
+			        <input type="text" id="first_name" name="first_name">
+			        <span id="first_name_error">*</span><br>
+			        
+			        <label for="last_name">Last Name</label>
+			        <input type="text" id="last_name" name="last_name">
+			        <span id="last_name_error">*</span><br>
+			        
+			        <label for "checkbox" class="label">Check box to get emails</label>
+								<input type="checkbox" id="latincheck" name="latincheck">
+						<br>			
+						<label for="interest" class="label">Which issue are you interested in?</label>
+							<select name="interest" id="interest">
+								<option value="null">Select One</option>
+								<option value="1">Walking around</option>
+								<option value="2">Sidewalk Maintence</option>
+								<option value="3">Zoning</option>
+								<option value="4">Building Code</option>
+							</select>
+				    <br>
+			        <label for="comments"  class="label">Questions or Comments </label>
+			        <br>
+						<textarea name="comments" cols="40" rows="5" id="comments"></textarea>
+			        <br>
+			        <label>&nbsp;</label>
+			        <input type="button" id="join_list" value="Join our List">
+			    </form>
+			</section>	
+	    </body>
 </html>

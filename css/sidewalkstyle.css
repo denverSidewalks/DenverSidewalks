@@ -1,3 +1,6 @@
+/*Russell "Eric" Erickson
+ ICT 4510 Advanced Website Design
+ Assignment 2 - CSS Assignment*/
 /* reset browser styles */
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
@@ -47,10 +50,13 @@ h1 {
 font-size: 2em;
 text-indent: 25px;
 padding: 5px 15px 5px 15px;
+/*width: 50px;
+display: inline-block;
+*/
 }
 h2 {
 font-size: 1.2em;
-text-indent: 25px;
+text-indent: 5px;
 }
 img {
 padding: 10px;
@@ -76,12 +82,24 @@ display: inline;
 a {
 text-align: center;
 height: 50px;
-width: 125px;
+width: 175px;
 display: block;
 border-radius: 10px;
 border: 1px solid #4B4B4B;
 margin: 5px;
 color: #000000;
+}
+h2 a {
+text-decoration: none;
+margin-left: auto;
+margin-right: auto;
+/*text-justify: center;*/
+/*text-align: center;*/
+/*text-height: 75px;*/
+/*text-align: justify;*/
+/*display:inline-block;*/
+vertical-align: middle;
+line-height: 50px;
 }
 label {
 font-size: 1.25em;
@@ -94,6 +112,8 @@ margin-top: 10px;
 .buttons a {
 text-align: center;
 height: 45px;
+line-height: 45px;
+vertical-align: middle;
 width: 125px;
 display: block;
 border-radius: 10px;
@@ -106,22 +126,15 @@ color: #000000;
 -ms-transition: -ms-transform .3s, background-color 1s ease-in .3s;
 transition: transform .3s, background-color 1s ease-in .3s;
 }
-.buttons {
-float: right;
-margin: 10px;
-margin-right: 100px;
-}
+
 .blog {
-background-color: #C0C0C0;
+background-color: #FF0000;
 }
 .contact {
 background-color: #C0C0C0;	
 }
-/*.about {
-background-color: ##707070;	
-}*/
 .resume {  
-background-color: #C0C0C0;	
+background-color: #0066FF;	
 }
 .email {
 width: 400px;
@@ -140,10 +153,18 @@ margin-right: 20px;
 margin-top: 20px;
 margin-bottom: 20px;
 font-size: 1.25em;
+list-style-type: none;
 }
 li a {
 font-size: 1.25em;
 border: none;
+text-decoration: none;
+}
+.buttons {
+float: right;
+margin: 10px;
+margin-right: 100px;
+/*text-decoration: none;*/
 }
 figcaption {
 color: #333;
@@ -163,20 +184,8 @@ border-bottom-color: #6E97BF;
 -ms-transform: scale(1.2);
 transform: scale(1.2);
 }
-.requestform .label{
-display: inline-block;
-width: 300px;
-vertical-align: top;
-text-align: right;
-margin-right: 10px;
+.signup {
+	text-align: center;
 }
-.requestform input[type="submit"] {
-margin-left: 250px;
-padding: 10px 25px;
-font-size: 1em; 
-}
-.requestform input[type="text"], .requestform textarea {
-	border-radius: 5px;
-	width: 400px;
-	padding: 5px;
-}
+
+

@@ -26,23 +26,37 @@ var join_list = function () {
 		$("first_name_error").firstChild.nodeValue = "";
 	}  
 	
+		if ($("last_name").value == "") {
+		$("last_name_error").firstChild.nodeValue = "This field is required.";
+		isValid = false;
+	} else {
+		$("first_name_error").firstChild.nodeValue = "";
+	}  
+	
 	if (isValid) {
 		$("email_form").submit(); 
+		console.log(emailAddress1)
 	}
+	if (isValid) {
+		window.alert( "Thankyou, " + $("first_name").value); 
+		console.log($("first_name").value, $("last_name").value) ;
+	}
+		if (isValid) {
+		window.prompt( "Please confirm last name" , $("last_name").value ) ;
+		console.log($("last_name").value) ;
+	}
+	
 }
 
 window.onload = function () {
     $("join_list").onclick = join_list;
+    //$("join_list").onclick = console.log('This is the console log method.');
     $("email_address1").focus();
     // enter the alert statement of step 11 here
-alert("ict4510 student Russell Erickson");
+//alert("ict4510 student Russell Erickson");
+//console.log('This is the console log method.');
+
 }
 
-/*
-function loaded () 
-{window.alert("ict4510 student Russell Erickson");
-  console.log('This is the console log method.');
-}
 
-window.onload = loaded ;
-*/
+
